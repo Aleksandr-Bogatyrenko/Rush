@@ -9,6 +9,7 @@ package Quizful;
 
         public static void main(String[] args) throws Exception {
             new Starter().makeItSo();
+            System.out.println(1);
         }
 
         public Starter() {
