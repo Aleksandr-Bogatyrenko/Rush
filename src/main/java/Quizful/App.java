@@ -8,6 +8,7 @@ public class App {
         App a = new App();
         App b = new App();
 
+
         System.out.println(a==b);
 
     }
