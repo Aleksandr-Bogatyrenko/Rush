@@ -22,8 +22,17 @@ public class Q {
         return n;
     }
     synchronized void put(int n){
+        while (ValueSet)
+            try{
+                wait();
+            }catch (InterruptedException e){
+                System.out.println("Int");
+            }
         this.n = n;
+        ValueSet = true;
+
         System.out.println("Send " + n);
+        notify();
     }
     }
 class Produser implements Runnable{
